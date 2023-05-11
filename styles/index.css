@@ -1,1 +1,12 @@
 @import url("./reset.css");
+@import url("variables.css");
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(var(--rgb-black));
+    color: rgb(var(--rgb-white));
+}
