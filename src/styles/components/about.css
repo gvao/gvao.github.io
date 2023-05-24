@@ -2,6 +2,9 @@
     height: calc(100vh * 0.7);
 
     display: flex;
+
+    background-color: rgb(101, 101, 101);
+    color: rgb(192, 192, 192);
 }
 
 #about .container {

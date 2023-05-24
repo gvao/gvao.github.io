@@ -1,0 +1,19 @@
+#skills {
+    min-height: 60vh;
+}
+
+#skills .container {
+    padding: 2.0rem 0;
+}
+
+.list-skills {
+    padding: 1.6rem;
+}
+
+.list-skills li {
+    padding: 2.0rem;
+
+    border-radius: 4px;
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0,0,0, .15);
+    flex-basis: 150px;
+}
