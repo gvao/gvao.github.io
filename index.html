@@ -7,238 +7,27 @@
 
     <title>Meu Portfólio | Yuri Galvão</title>
 
-    <link rel="stylesheet" href="src/styles/tailwind.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles/style.css">
 </head>
 
-<body class="bg-white text-gray-900 font-poppins dark:bg-gray-900 dark:text-white">
-
-    <!-- Navegação -->
-    <header class="bg-white dark:bg-gray-900 fixed top-0 w-full">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <a href="/" class="text-lg font-semibold">Yuri Galvão</a>
-
-            <nav>
-                <button class="md:hidden w-8 h-6 flex flex-col space-y-1.5" id="hamburger-menu">
-                    <div class="bg-gray-300 h-full w-full rounded"></div>
-                    <div class="bg-gray-300 h-full w-full rounded"></div>
-                    <div class="bg-gray-300 h-full w-full rounded"></div>
-                </button>
-
-                <ul id="menu" class="hidden 
-                 absolute p-6 bg-gray-900 right-0 flex flex-col gap-4 
-                 md:flex-row md:flex md:top-0 md:p-0 md:static
-                ">
-                    <li><a href="#inicio" class="hover:text-gray-300">Início</a></li>
-                    <li><a href="#sobre" class="hover:text-gray-300">Sobre</a></li>
-                    <li><a href="#habilidades" class="hover:text-gray-300">Habilidades</a></li>
-                    <li><a href="#projetos" class="hover:text-gray-300">Projetos</a></li>
-                    <li><a href="#contato" class="hover:text-gray-300">Contato</a></li>
-                </ul>
-            </nav>
+<body>
+    
+    <header>
+        <div id="logo">
+            Yuri Galvão
         </div>
+
+        <nav>
+            <ul class="nav-bar">
+                <li class="item"><a href="/">link</a></li>
+                <li class="item"><a href="#aboult">link</a></li>
+                <li class="item"><a href="#skills">link</a></li>
+                <li class="item"><a href="#contact">link</a></li>
+                <li class="item"><a href="#projects">link</a></li>
+            </ul>
+        </nav>
+
     </header>
-
-    <main>
-        <!-- Seção Inicial -->
-        <section id="inicio" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-20">
-            <div class="container mx-auto px-4 max-w-xl
-            flex flex-col gap-7 justify-between items-center
-            md:flex-row
-            ">
-
-                <div class="grow m-auto">
-                    <img src="src/images/undraw_6.svg" alt="img inicial" class="w-full">
-                </div>
-
-                <div id="info" class="grow my-6 mx-auto md:order-1">
-                    <h1 class=" text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Olá, meu nome é <strong
-                            class="whitespace-nowrap">Yuri Galvão</strong>
-                    </h1>
-                    <p class="text-justify md:text-lg mb-8">Sou um desenvolvedor web apaixonado por criar soluções
-                        inovadoras e eficientes. Com mais de um ano de experiência em programação, comecei a estudar
-                        JavaScript no início do isolamento social e me especializando na linguagem.</p>
-                    <a href="#contato"
-                        class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition-colors duration-300 ease-in-out">
-                        Entre em Contato
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Seção Sobre -->
-        <section id="sobre" class="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Sobre Mim</h2>
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/2">
-                        <img src="src/images/perfil.jpeg" alt="Foto do perfil" class="rounded-lg mb-6 md:mb-0">
-                    </div>
-                    <div class="md:w-1/2 md:pl-12">
-                        <p class="text-base md:text-lg mb-6">Sou um desenvolvedor web com experiência em front-end e
-                            back-end. Tenho conhecimentos em HTML, CSS, JavaScript e frameworks como React.js e Next.js.
-                        </p>
-                        <p class="text-base md:text-lg mb-6">Tenho paixão por aprender novas
-                            tecnologias e aplicá-las em soluções inovadoras.</p>
-                        <p class="text-base md:text-lg mb-6">Estou sempre em busca de desafios e oportunidades para
-                            expandir
-                            meu conhecimento e aprimorar minhas habilidades. Se você tem algum projeto interessante ou
-                            oportunidade de trabalho, não hesite em entrar em contato comigo.</p>
-                        <a href="#contato"
-                            class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition-colors duration-300 ease-in-out">Entre
-                            em Contato</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Habilidades -->
-        <section id="habilidades" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Habilidades</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <div class="flex items-center">
-                        <i class="fas fa-code text-3xl mr-4"></i>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Desenvolvimento Web</h3>
-                            <p class="text-base">Experiência em HTML, CSS, JavaScript e frameworks como React.js e Next.js.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <i class="fas fa-laptop-code text-3xl mr-4"></i>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Front-end</h3>
-                            <p class="text-base">Conhecimentos em design responsivo, CSS frameworks e bibliotecas como
-                                Bootstrap e Tailwind CSS.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <i class="fas fa-server text-3xl mr-4"></i>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Back-end</h3>
-                            <p class="text-base">Experiência em desenvolvimento de APIs, banco de dados e frameworks
-                                como
-                                Express.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center">
-                        <i class="fas fa-database text-3xl mr-4"></i>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">Banco de Dados</h3>
-                            <p class="text-base">Conhecimentos em bancos de dados NoSQL, como MongoDB, FireBase.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Projetos -->
-        <section id="projetos" class="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Projetos</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
-                        <img src="src/images/project1.jpg" alt="Projeto 1" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Projeto 1</h3>
-                            <p class="text-base mb-4">Descrição do projeto 1.</p>
-                            <a href="#"
-                                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition-colors duration-300 ease-in-out">Ver
-                                Detalhes</a>
-                        </div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
-                        <img src="src/images/project2.jpg" alt="Projeto 2" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Projeto 2</h3>
-                            <p class="text-base mb-4">Descrição do projeto 2.</p>
-                            <a href="#"
-                                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition-colors duration-300 ease-in-out">Ver
-                                Detalhes</a>
-                        </div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
-                        <img src="src/images/project3.jpg" alt="Projeto 3" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Projeto 3</h3>
-                            <p class="text-base mb-4">Descrição do projeto 3.</p>
-                            <a href="#"
-                                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition-colors duration-300 ease-in-out">Ver
-                                Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção Contato -->
-        <section id="contato" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-20">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Contato</h2>
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/2">
-                        <p class="text-base md:text-lg mb-6">Estou disponível para oportunidades de trabalho e projetos
-                            interessantes. Se você gostaria de entrar em contato comigo, por favor, preencha o
-                            formulário
-                            abaixo ou envie um e-mail para yuri.gvao@gmail.com. Responderei o mais rápido possível.</p>
-                        <ul class="flex space-x-4">
-                            <li>
-                                <a href="#"
-                                    class="text-gray-500 hover:text-blue-500 transition-colors duration-300 ease-in-out">
-                                    <i class="fab fa-linkedin-in text-3xl"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-gray-500 hover:text-blue-500 transition-colors duration-300 ease-in-out">
-                                    <i class="fab fa-github text-3xl"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-gray-500 hover:text-blue-500 transition-colors duration-300 ease-in-out">
-                                    <i class="fab fa-twitter text-3xl"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="md:w-1/2 md:pl-12">
-                        <form>
-                            <div class="mb-4">
-                                <label for="nome" class="block text-lg font-semibold mb-2">Nome</label>
-                                <input type="text" id="nome" name="nome"
-                                    class="w-full py-2 px-4 rounded-lg border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                                    required>
-                            </div>
-                            <div class="mb-4">
-                                <label for="email" class="block text-lg font-semibold mb-2">E-mail</label>
-                                <input type="email" id="email" name="email"
-                                    class="w-full py-2 px-4 rounded-lg border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                                    required>
-                            </div>
-                            <div class="mb-4">
-                                <label for="mensagem" class="block text-lg font-semibold mb-2">Mensagem</label>
-                                <textarea id="mensagem" name="mensagem" rows="4"
-                                    class="w-full py-2 px-4 rounded-lg border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                                    required></textarea>
-                            </div>
-                            <button type="submit"
-                                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition-colors duration-300 ease-in-out">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Rodapé -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-4">
-            <p class="text-center">&copy; 2023 Yuri Galvão. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="src/scripts/hamburger-menu.js"></script>
 
 </body>
 
