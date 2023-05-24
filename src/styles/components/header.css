@@ -1,0 +1,21 @@
+header {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 690px;
+    
+    /* background-color: red; */
+
+    margin: 0 auto;
+    padding: 16px 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav > ul {
+    display: flex;
+    gap: 8px;
+}
