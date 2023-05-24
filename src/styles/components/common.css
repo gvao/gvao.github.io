@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    max-width: 690px;
+
+    margin: 0 auto;
+    padding: 16px 8px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex.flex-column {
+    flex-direction: column;
+}
+
+.d-flex.justify-center {
+    justify-content: center;
+}
+.d-flex.justify-between {
+    justify-content: space-between;
+}
