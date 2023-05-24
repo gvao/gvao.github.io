@@ -1,13 +1,24 @@
-main {
+#banner {
     height: calc(100vh * 0.8);
     width: 100%;
 }
 
-main .container {
+#banner .container {
     margin-top: calc(100vh * 0.2);
     margin-bottom: calc(100vh * 0.2);
 }
 
-main .img {
+#banner .img {
     width: 60%;
+}
+
+#banner article {
+    max-width: 490px;
+    width: 90%;
+    
+    padding: 20px 30px;
+    margin-top: 40px;
+
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
 }
