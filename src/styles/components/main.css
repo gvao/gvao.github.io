@@ -1,0 +1,13 @@
+main {
+    height: calc(100vh * 0.8);
+    width: 100%;
+}
+
+main .container {
+    margin-top: calc(100vh * 0.2);
+    margin-bottom: calc(100vh * 0.2);
+}
+
+main .img {
+    width: 60%;
+}

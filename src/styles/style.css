@@ -1,3 +1,6 @@
 @import url('./components/reset.css');
+
 @import url('./components/common.css');
+
 @import url('./components/header.css');
+@import url('./components/main.css');
