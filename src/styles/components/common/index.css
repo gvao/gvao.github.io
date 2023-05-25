@@ -64,3 +64,8 @@
 .d-flex.wrap {
     flex-wrap: wrap;
 }
+
+.theme-secondary {
+    background-color: rgb( var(--bg-secondary-rgb) );
+    color: rgb( var(--color-secondary-rgb) );
+}

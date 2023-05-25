@@ -1,16 +1,23 @@
 @import url('./components/reset.css');
 
-@import url('./components/common.css');
+@import url('./components/common/index.css');
 
 @import url('./components/header.css');
 @import url('./components/main.css');
 @import url('./components/about.css');
 @import url('./components/skills.css');
+@import url('./components/projects.css');
 
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --bg-secondary-rgb: 101, 101, 101;
+    --color-secondary-rgb: 192, 192, 192;
 }
