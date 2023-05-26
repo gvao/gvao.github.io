@@ -1,8 +1,36 @@
-header {
+.main-header {
+    background-color: inherit;
+
     width: 100%;
+
+    position: fixed;
+    top: 0;
+
+    box-shadow: 1rem 0 4rem -18px;
 }
 
-header nav > ul {
+.main-header #logo {
+    font-weight: bold;
+    letter-spacing: -1.5px;
+}
+
+.main-header nav>ul {
     display: flex;
     gap: 8px;
+    
+}
+
+.main-header nav>ul:hover li {
+    filter: blur(2px);
+
+    transition-property: "transform";
+    transition: .5s ease-in;
+}
+
+.main-header nav>ul li:hover {
+    position: relative;
+    filter: blur(0);
+    transform: scale(1.2);
+    padding: var(--pad-md) var(--pad-default);
+    border-radius: var(--radius-default);
 }

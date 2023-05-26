@@ -3,6 +3,7 @@
 
 @import url('./components/common/index.css');
 @import url('./components/basics.css');
+@import url('./components/patterns.css');
 
 @import url('./components/header.css');
 @import url('./components/main.css');
@@ -20,7 +21,7 @@ body {
     font-size: 2.4rem;
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: var(--color-default);
 }
 
