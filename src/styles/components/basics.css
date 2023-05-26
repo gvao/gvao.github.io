@@ -1,0 +1,13 @@
+label {
+    text-transform: capitalize;
+}
+
+input {
+    padding: var(--pad-md) var(--pad-default);
+    border: none;
+    outline: none;
+
+    border-radius: var(--radius-default);
+    box-shadow: var(--shadow-default) ;
+}
+
