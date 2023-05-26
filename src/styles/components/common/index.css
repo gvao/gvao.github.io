@@ -1,71 +1,9 @@
+@import url('./display/flex.css');
+
 .container {
     width: 100%;
     max-width: 69.0rem;
 
     margin: 0 auto;
     padding: 1.6rem .8rem;
-}
-
-.d-flex {
-    display: flex;
-}
-
-/* flex-direction */
-.d-flex.flex-column {
-    flex-direction: column;
-}
-
-/* justify-content */
-.d-flex.justify-center {
-    justify-content: center;
-}
-.d-flex.justify-between {
-    justify-content: space-between;
-}
-.d-flex.justify-around {
-    justify-content: space-around;
-}
-.d-flex.justify-evenly {
-    justify-content: space-evenly;
-}
-
-/* align-items */
-.d-flex.items-center {
-    align-items: center;
-}
-
-/* gap */
-.d-flex.gap-0 {
-    gap: calc( .4rem * 0);
-}
-.d-flex.gap-1 {
-    gap: calc( .4rem * 1);
-}
-.d-flex.gap-2 {
-    gap: calc( .4rem * 2);
-}
-.d-flex.gap-5 {
-    gap: calc( .4rem * 5);
-}
-.d-flex.gap-6 {
-    gap: calc( .4rem * 6);
-}
-.d-flex.gap-7 {
-    gap: calc( .4rem * 7);
-}
-.d-flex.gap-10 {
-    gap: calc( .4rem * 10);
-}
-
-.rounded {
-    border-radius: .4rem;
-}
-
-.d-flex.wrap {
-    flex-wrap: wrap;
-}
-
-.theme-secondary {
-    background-color: rgb( var(--bg-secondary-rgb) );
-    color: rgb( var(--color-secondary-rgb) );
 }

@@ -7,6 +7,7 @@
 @import url('./components/about.css');
 @import url('./components/skills.css');
 @import url('./components/projects.css');
+@import url('./components/contact.css');
 
 html {
     font-size: 62.5%;
@@ -20,4 +21,7 @@ body {
 :root {
     --bg-secondary-rgb: 101, 101, 101;
     --color-secondary-rgb: 192, 192, 192;
+
+    --pad-default: 1.6rem;
+    --pad-md: calc( var(--pad-default) / 2 )
 }

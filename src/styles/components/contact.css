@@ -1,0 +1,9 @@
+#contact {
+    padding: var(--pad-default) 0;
+
+    min-height: 40vh;
+}
+
+#contact .container form {
+    padding: var(--pad-md);
+}
