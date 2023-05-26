@@ -5,5 +5,10 @@
 }
 
 #contact .container form {
+    width: 100%;
     padding: var(--pad-md);
+}
+
+#contact .container form div {
+
 }

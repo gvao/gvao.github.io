@@ -162,13 +162,28 @@
         </section>
 
         <section id="contact">
-            <div class="container d-flex justify-center items-center flex-column">
-                <h1>Contato</h1>
+            <div class="container d-flex justify-center items-center flex-column gap-4">
+                <header>
+                    <h2>Contato</h2>
+                    <p>Estou disponível para oportunidades de trabalho e projetos interessantes. Se você gostaria de entrar em contato comigo, por favor, preencha o formulário abaixo ou envie um e-mail para yuri.gvao@gmail.com. Responderei o mais rápido possível.</p>
+                </header>
 
                 <form class="d-flex flex-column gap-2">
-                    <h2>E-mail</h2>
-                    <input type="text" name="name" id="name">
-                    <input type="email" name="e-mail" id="e-mail" placeholder="Seu e-mail">
+
+                    <div class="d-flex flex-column">
+                        <label for="name">name</label>
+                        <input type="text" name="name" id="name" placeholder="Seu nome...">
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="e-mail" id="e-mail" placeholder="Seu e-mail">
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <label for="email">mensagem</label>
+                        <textarea name="mensage" id="mensage" cols="30" rows="10" placeholder="Sua mensagem aqui..."></textarea>
+                    </div>
 
                     <button type="submit">Enviar</button>
                 </form>
@@ -176,6 +191,7 @@
         </section>
 
     </main>
+    
 
 </body>
 
