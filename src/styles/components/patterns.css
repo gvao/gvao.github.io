@@ -1,4 +1,4 @@
 .theme-secondary {
-    background-color: var(--color-secondary);
-    color: var(--color-default);
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }

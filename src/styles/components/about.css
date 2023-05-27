@@ -1,14 +1,33 @@
 #about {
     min-height: 50vh;
-
     padding: 2.0rem 0;
 }
 
-#about .container {
-    align-items: center;
+.about-title {
+    color: var(--color-default);
 }
 
-#about img {
-    width: 80%;
+.about-infos {
+    width: 100%;
+}
+
+.about-img {
+    width: 70%;
+    height: fit-content;
+    
+    margin: 2.8rem;
+
+    border: 0.7rem solid var(--color-default);
     border-radius: 50%;
+
+    overflow: hidden;
+
+}
+
+.about-description {
+    padding: 3.2rem;
+    flex-shrink: 2;
+
+    transform: scale(.85);
+    line-height: 1.5;
 }
