@@ -1,10 +1,10 @@
 {
-  "name": "gvao.github.io",
+  "name": "yuri_galvao-portifolio",
   "version": "1.0.0",
   "description": "my site",
   "main": "index.js",
   "scripts": {
-    "dev:tailwind": "npx tailwindcss -i src/styles/index.css -o src/styles/tailwind.css --watch"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
