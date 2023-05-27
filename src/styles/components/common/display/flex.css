@@ -39,6 +39,9 @@
 .d-flex.gap-2 {
     gap: calc( .4rem * 2);
 }
+.d-flex.gap-4 {
+    gap: calc( .4rem * 4);
+}
 .d-flex.gap-5 {
     gap: calc( .4rem * 5);
 }
@@ -47,6 +50,12 @@
 }
 .d-flex.gap-7 {
     gap: calc( .4rem * 7);
+}
+.d-flex.gap-8 {
+    gap: calc( .4rem * 8);
+}
+.d-flex.gap-9 {
+    gap: calc( .4rem * 9);
 }
 .d-flex.gap-10 {
     gap: calc( .4rem * 10);
