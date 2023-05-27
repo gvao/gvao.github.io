@@ -13,10 +13,14 @@ textarea {
 }
 
 button {
-    margin: .8rem 0;
-    padding: var(--pad-md) var(--pad-default);
+    background-color: var(--color-default);
+    color: var(--color-black);
+
+    margin: 1.8rem 0 ;
+    padding: calc((var(--pad-md) var(--pad-default)) * 2);
 
     font-weight: bold;
+    font-size: 2.0rem;
     text-transform: uppercase;
 
     border: none;
