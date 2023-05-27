@@ -10,6 +10,10 @@
     box-shadow: 1rem 0 4rem -18px;
 }
 
+.main-header .container {
+    padding: 1.6rem;
+}
+
 .main-header #logo {
     font-weight: bold;
     letter-spacing: -1.5px;
@@ -25,7 +29,7 @@
     filter: blur(2px);
 
     transition-property: "transform";
-    transition: .5s ease-in;
+    transition: .25s ease-out;
 }
 
 .main-header nav>ul li:hover {
