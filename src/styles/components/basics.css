@@ -12,7 +12,8 @@ textarea {
     box-shadow: var(--shadow-default);
 }
 
-button {
+button, .button {
+    text-align: center;
     background-color: var(--color-default);
     color: var(--color-black);
 
