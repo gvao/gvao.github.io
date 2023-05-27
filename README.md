@@ -7,7 +7,7 @@
 
 ## Sobre Mim
 
-Olá! Eu sou Yuri Moreira Galvão Prado, um desenvolvedor iniciante com foco em frontend. Estou em busca de oportunidades para crescer na área de desenvolvimento web e aplicar meus conhecimentos em projetos desafiadores. Sou apaixonado por JavaScript e estou sempre buscando aprender novas tecnologias para aprimorar minhas habilidades.
+Olá! Eu sou Yuri Moreira Galvão Prado, um desenvolvedor de software com foco em frontend. Estou em busca de oportunidades para desenvolver minha carreira no desenvolvimento web e aplicar meus conhecimentos em projetos desafiadores. Sou apaixonado por JavaScript e estou sempre buscando aprender novas tecnologias para aprimorar minhas habilidades.
 
 ## Habilidades
 
@@ -19,15 +19,15 @@ Olá! Eu sou Yuri Moreira Galvão Prado, um desenvolvedor iniciante com foco em 
 
 ### Gerador de Senhas
 
-Descrição: Um aplicativo simples em JavaScript que gera senhas seguras com base nos critérios selecionados pelo usuário. [Ver projeto](https://github.com/gvao/gerador-token)
+> Descrição: Um aplicativo simples em JavaScript que gera senhas seguras com base nos critérios selecionados pelo usuário. [Ver projeto](https://github.com/gvao/gerador-token)
 
 ### Relógio Digital
 
-Descrição: Um relógio digital desenvolvido em React, exibindo a hora atual em tempo real. [Ver projeto](https://github.com/gvao/relogio-virtual)
+> Descrição: Um relógio digital desenvolvido em React, exibindo a hora atual em tempo real. [Ver projeto](https://github.com/gvao/relogio-virtual)
 
 ### Quiz Espacial
 
-Descrição: Um quiz interativo de perguntas sobre o espaço, criado com React e Next.js. [Ver projeto](https://github.com/gvao/quiz-planetario)
+> Descrição: Um quiz interativo de perguntas sobre o espaço, criado com React e Next.js. [Ver projeto](https://github.com/gvao/quiz-planetario)
 
 ## Objetivo
 
