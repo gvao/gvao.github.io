@@ -1,0 +1,14 @@
+#about {
+    min-height: 50vh;
+
+    padding: 2.0rem 0;
+}
+
+#about .container {
+    align-items: center;
+}
+
+#about img {
+    width: 80%;
+    border-radius: 50%;
+}

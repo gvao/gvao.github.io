@@ -1,0 +1,17 @@
+@import url('./display/flex.css');
+
+.container {
+    width: 100%;
+    max-width: 120.0rem;
+
+    margin: 0 auto;
+    padding: 3.2rem 1.6rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-full {
+    width: 100%;
+}

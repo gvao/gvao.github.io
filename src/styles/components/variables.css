@@ -1,0 +1,64 @@
+:root {
+    /* # Serenity */
+
+    /* Light */
+    --color-black: #3f3f3f;
+    --color-white: #fff;
+    
+    --color-primary: #F5F5F5;
+    --color-secondary: #C4C4C4;
+    --color-default: #007BFF;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Dark */
+        --color-black: #000;
+        --color-white: #a2a2a2;
+
+        --color-primary: #121212;
+        --color-secondary: #2B2B2B;
+        --color-default: #007BFF;
+    }
+}
+
+
+.outras-paletas {
+    /* # Ethereal */
+
+    /* Light */
+    --color-primary: #FFFFFF;
+    --color-secondary: #EAEAEA;
+    --color-default: #4CAF50;
+
+    /* Dark */
+    --color-primary: #111111;
+    --color-secondary: #303030;
+    --color-default: #4CAF50;
+
+
+    /* # Tranquil */
+
+    /* Light */
+    --color-primary: #F9F9F9;
+    --color-secondary: #D8D8D8;
+    --color-default: #FF9800;
+
+    /* Dark */
+    --color-primary: #1C1C1C;
+    --color-secondary: #363636;
+    --color-default: #FF9800;
+}
+
+:root {
+
+    /* padding */
+    --pad-default: 1.6rem;
+    --pad-md: calc(var(--pad-default) / 2);
+
+    /* radius */
+    --radius-default: .4rem;
+
+    /* box-shadow */
+    --shadow-default: .2rem .2rem .4rem rgba(0, 0, 0, .4);
+}

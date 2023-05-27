@@ -1,0 +1,26 @@
+label {
+    text-transform: capitalize;
+}
+
+input,
+textarea {
+    padding: var(--pad-md) var(--pad-default);
+    border: none;
+    outline: none;
+
+    border-radius: var(--radius-default);
+    box-shadow: var(--shadow-default);
+}
+
+button {
+    margin: .8rem 0;
+    padding: var(--pad-md) var(--pad-default);
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: var(--radius-default);
+
+    box-shadow: var(--shadow-default);
+}
