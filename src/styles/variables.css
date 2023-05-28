@@ -7,7 +7,9 @@
     
     --color-primary: #F5F5F5;
     --color-secondary: #C4C4C4;
-    --color-default: #007BFF;
+    --color-default: rgb(0, 123, 255);
+    
+    --color-default-rgb: 0, 123, 255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +21,7 @@
         --color-primary: #121212;
         --color-secondary: #2B2B2B;
         --color-default: #007BFF;
+        --color-default-rgb: 0, 123, 255;
     }
 }
 
