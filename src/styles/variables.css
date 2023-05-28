@@ -51,13 +51,14 @@
 }
 
 :root {
+    --pixel: .4rem ;
 
     /* padding */
     --pad-default: 1.6rem;
     --pad-md: calc(var(--pad-default) / 2);
 
     /* radius */
-    --radius-default: .4rem;
+    --radius-default: calc( var(--pixel) * 2 );
 
     /* box-shadow */
     --shadow-default: .2rem .2rem .4rem rgba(0, 0, 0, .4);
