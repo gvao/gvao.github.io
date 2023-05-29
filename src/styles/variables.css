@@ -7,7 +7,9 @@
     
     --color-primary: #F5F5F5;
     --color-secondary: #C4C4C4;
-    --color-default: #007BFF;
+    --color-default: rgb(0, 123, 255);
+    
+    --color-default-rgb: 0, 123, 255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +21,7 @@
         --color-primary: #121212;
         --color-secondary: #2B2B2B;
         --color-default: #007BFF;
+        --color-default-rgb: 0, 123, 255;
     }
 }
 
@@ -51,13 +54,14 @@
 }
 
 :root {
+    --pixel: .4rem ;
 
     /* padding */
     --pad-default: 1.6rem;
     --pad-md: calc(var(--pad-default) / 2);
 
     /* radius */
-    --radius-default: .4rem;
+    --radius-default: calc( var(--pixel) * 2 );
 
     /* box-shadow */
     --shadow-default: .2rem .2rem .4rem rgba(0, 0, 0, .4);
