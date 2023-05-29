@@ -61,10 +61,6 @@
     gap: calc( .4rem * 10);
 }
 
-.rounded {
-    border-radius: .4rem;
-}
-
 .d-flex.wrap {
     flex-wrap: wrap;
 }
