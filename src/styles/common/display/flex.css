@@ -28,6 +28,9 @@
 .d-flex.items-center {
     align-items: center;
 }
+.d-flex.items-start {
+    align-items: start;
+}
 
 /* gap */
 .d-flex.gap-0 {
@@ -59,10 +62,6 @@
 }
 .d-flex.gap-10 {
     gap: calc( .4rem * 10);
-}
-
-.rounded {
-    border-radius: .4rem;
 }
 
 .d-flex.wrap {

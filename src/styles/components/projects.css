@@ -1,16 +1,76 @@
 #projects {
     min-height: 40vh;
-
-    padding: 2.0rem 0
+    padding: 2.0rem 0;
+    overflow: hidden;
 }
 
+.projects-container {
+    width: 100vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 
-#projects ul li {
+    margin: calc(var(--pixel) * 8);
+}
+
+.projects-list {
+    width: 100vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    padding: 5vh 50vw;
+}
+
+.projects-list * {
+    white-space: normal;
+}
+
+.project {
+    width: 40%;
+    min-width: 40vw;
+
     padding: 1.6rem;
-    box-shadow: .15rem .15rem .4rem rgba( 0, 0, 0, .2 );
-    border-radius: .4rem;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    /* border: 1px solid; */
+
+    box-shadow:
+        0.3rem 0.3rem 0.8rem 0.2rem rgba(var(--color-default-rgb), 0.6);
 }
 
-#projects .project {
-    flex-basis: 30.0rem;
+.project-infos {
+    margin: calc(var(--pixel) * 3) 0;
+}
+
+.project-subtitle {
+
+    color: var(--color-default);
+    text-align: center;
+    margin: calc(var(--pixel) * 2) 0;
+    font-weight: bold;
+    font-size: calc(var(--pixel) * 8);
+}
+
+.project-description {
+    overflow-wrap: break-word;
+}
+
+.project-img {
+    height: 26rem;
+
+    border: 2px solid;
+
+    overflow: hidden;
+}
+
+.project-actions {
+    width: 100%;
+
+}
+
+.project-actions .button {
+    padding: calc(var(--pixel) * 4) calc(var(--pixel) * 3);
+
+    flex-grow: 1;
 }

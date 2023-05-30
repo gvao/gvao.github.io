@@ -15,3 +15,7 @@
 .w-full {
     width: 100%;
 }
+
+.rounded {
+    border-radius: var(--radius-default);
+}
