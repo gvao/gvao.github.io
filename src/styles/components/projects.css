@@ -8,6 +8,8 @@
     width: 100vw;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+
+    margin: calc( var(--pixel) * 8 );
 }
 
 .projects-list {
@@ -15,6 +17,7 @@
     overflow-x: scroll;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
+    padding: 0 50vw;
 }
 
 .projects-list * {
@@ -24,7 +27,7 @@
 .project {
     scroll-snap-align: center;
     width: 40%;
-    min-width: 40%;
+    min-width: 40vw;
     padding: 1.6rem;
 
     border: 1px solid;
