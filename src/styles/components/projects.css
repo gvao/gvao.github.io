@@ -9,7 +9,7 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 
-    margin: calc( var(--pixel) * 8 );
+    margin: calc(var(--pixel) * 8);
 }
 
 .projects-list {
@@ -17,7 +17,7 @@
     overflow-x: scroll;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
-    padding: 0 50vw;
+    padding: 5vh 50vw;
 }
 
 .projects-list * {
@@ -25,17 +25,31 @@
 }
 
 .project {
-    scroll-snap-align: center;
     width: 40%;
     min-width: 40vw;
+
     padding: 1.6rem;
 
-    border: 1px solid;
-
+    scroll-snap-align: center;
     scroll-snap-stop: always;
 
-    box-shadow: 
-    .15rem .15rem .4rem rgba(0, 0, 0, .2);
+    /* border: 1px solid; */
+
+    box-shadow:
+        0.3rem 0.3rem 0.8rem 0.2rem rgba(var(--color-default-rgb), 0.6);
+}
+
+.project-infos {
+    margin: calc(var(--pixel) * 3) 0;
+}
+
+.project-title {
+
+    color: var(--color-default);
+    text-align: center;
+    margin: calc(var(--pixel) * 2) 0;
+    font-weight: bold;
+    font-size: calc(var(--pixel) * 8);
 }
 
 .project-description {
@@ -43,7 +57,20 @@
 }
 
 .project-img {
-    overflow: hidden;
+    height: 26rem;
+
     border: 2px solid;
-    height: 15rem;
+
+    overflow: hidden;
+}
+
+.project-actions {
+    width: 100%;
+
+}
+
+.project-actions .button {
+    padding: calc(var(--pixel) * 4) calc(var(--pixel) * 3);
+
+    flex-grow: 1;
 }
