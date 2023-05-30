@@ -28,6 +28,9 @@
 .d-flex.items-center {
     align-items: center;
 }
+.d-flex.items-start {
+    align-items: start;
+}
 
 /* gap */
 .d-flex.gap-0 {
