@@ -1,16 +1,46 @@
 #projects {
     min-height: 40vh;
-
-    padding: 2.0rem 0
+    padding: 2.0rem 0;
+    overflow: hidden;
 }
 
+.project-container {
+    width: 100vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
 
-#projects ul li {
+.projects-list {
+    width: 100vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.projects-list * {
+    white-space: normal;
+}
+
+.project {
+    scroll-snap-align: center;
+    width: 40%;
+    min-width: 40%;
     padding: 1.6rem;
-    box-shadow: .15rem .15rem .4rem rgba( 0, 0, 0, .2 );
-    border-radius: .4rem;
+
+    border: 1px solid;
+
+    scroll-snap-stop: always;
+
+    box-shadow: 
+    .15rem .15rem .4rem rgba(0, 0, 0, .2);
 }
 
-#projects .project {
-    flex-basis: 30.0rem;
+.project-description {
+    overflow-wrap: break-word;
+}
+
+.project-img {
+    overflow: hidden;
+    border: 2px solid;
+    height: 15rem;
 }
