@@ -4,7 +4,7 @@
     overflow: hidden;
 }
 
-.project-container {
+.projects-container {
     width: 100vw;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -43,7 +43,7 @@
     margin: calc(var(--pixel) * 3) 0;
 }
 
-.project-title {
+.project-subtitle {
 
     color: var(--color-default);
     text-align: center;
