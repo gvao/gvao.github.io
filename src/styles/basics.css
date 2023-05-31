@@ -1,6 +1,9 @@
 label {
     text-transform: capitalize;
 }
+p {
+    line-height: 1.5;
+}
 
 input,
 textarea {

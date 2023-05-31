@@ -19,3 +19,11 @@
 .rounded {
     border-radius: var(--radius-default);
 }
+
+.title-default {
+    text-align: center;
+    margin: calc(var(--pixel) * 4) 0;
+    font-size: xxx-large;
+    color: var(--text-default);
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba( var(--color-default-rgb), 0.4);
+}
