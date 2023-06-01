@@ -7,13 +7,10 @@
 .contact-infos {
     max-width: 50%;
     flex: 1 0 50%;
+    padding: var(--pad-default);
+    color: var(--text-default);
 }
 
-.contact-social {
-    padding: calc(var(--pixel) * 4);
-    border: 2px solid;
-    margin: calc(var(--pixel) * 3) 0;
-}
 
 .social-item {
     width: 100%;
@@ -25,10 +22,6 @@
     width: 100%;
 }
 
-.contact-social img {
-    max-width: 5rem;
-}
-
 .social-name {
     width: 100%;
     transform: translateY(-20%);
@@ -37,9 +30,31 @@
     padding: var(--pixel) calc(var(--pixel) * 3);
 }
 
-#contact .container form {
+#contact-form {
     width: 100%;
     padding: var(--pad-md);
 }
 
-#contact .container form div {}
+.contact-field {
+    flex-grow: 1;
+}
+
+#contact-form label {
+    width: fit-content;
+
+    background-color: rgba(var(--color-default-rgb), .8);
+    color: var(--text-default);
+
+    position: relative;
+    top: 10px;
+
+    padding: calc(var(--pad-md) / 2) var(--pad-md);
+    transform: translateY(-20%);
+
+    /* margin-bottom: calc(var(--pixel) * -1.5) ; */
+}
+
+#contact-form button {
+    flex-grow: 1;
+    flex-basis: 50%;
+}

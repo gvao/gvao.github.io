@@ -65,8 +65,39 @@
 
                 <div class="about-infos d-flex items-center justify-between">
 
-                    <div class="about-img">
-                        <img src="/src/images/perfil.jpeg" alt="foto perfil">
+                    <div>
+                        <div class="about-img">
+                            <img src="/src/images/perfil.jpeg" alt="foto perfil">
+                        </div>
+
+                        <div class="about-social rounded">
+                            <ul class="d-flex justify-evenly gap-2">
+    
+                                <li class="social-item">
+                                    <a class="d-flex flex-column gap-1 items-center" target="_blank" href="https://wa.me/5585992915328">
+                                        <img src="src/images/icons/social/whatsapp.png" alt="gvao-whatsapp">
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="d-flex flex-column items-center" target="_blank" href="https://github.com/gvao">
+                                        <img src="src/images/icons/social/github.png" alt="gvao-github">
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="d-flex flex-column items-center" target="_blank" href="https://www.linkedin.com/in/yuri-galvao">
+                                        <img src="src/images/icons/social/linkedin.png" alt="gvao-linkedin">
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="d-flex flex-column items-center" target="_blank" href="https://www.linkedin.com/in/yuri-galvao">
+                                        <img src="src/images/icons/social/instagram.png" alt="gvao-instagram">
+                                    </a>
+                                </li>
+    
+                            </ul>
+    
+                        </div>
+
                     </div>
 
                     <div class="about-description d-flex flex-column gap-4">
@@ -309,62 +340,24 @@
                         <span id="my-email">yuri.gvao@gmail.com</span>.
                     </p>
 
-                    <div class="contact-social rounded">
-                        <ul class="d-flex justify-between gap-2">
-                            <li class="social-item">
-                                <a class="d-flex flex-column gap-1 items-center" target="_blank" href="https://wa.me/5585992915328">
-                                    <img src="src/images/icons/social/whatsapp.png" alt="gvao-whatsapp">
-                                    <span class="social-name rounded">
-                                        WhatsApp
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a class="d-flex flex-column items-center" target="_blank" href="https://github.com/gvao">
-                                    <img src="src/images/icons/social/github.png" alt="gvao-github">
-                                    <span class="social-name rounded">
-                                        GitHub
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a class="d-flex flex-column items-center" target="_blank" href="https://www.linkedin.com/in/yuri-galvao">
-                                    <img src="src/images/icons/social/linkedin.png" alt="gvao-linkedin">
-                                    <span class="social-name rounded">
-                                        LinkedIn
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a class="d-flex flex-column items-center" target="_blank" href="https://www.linkedin.com/in/yuri-galvao">
-                                    <img src="src/images/icons/social/instagram.png" alt="gvao-instagram">
-                                    <span class="social-name rounded">
-                                        Instagram
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-
                 </header>
 
 
-                <form class="d-flex flex-column gap-2">
+                <form id="contact-form" class="d-flex wrap gap-2">
 
-                    <div class="d-flex flex-column">
-                        <label for="name">name</label>
+                    <div class="contact-field d-flex flex-column">
+                        <label class="rounded" for="name">name</label>
                         <input type="text" name="name" id="name" placeholder="Seu nome...">
                     </div>
 
-                    <div class="d-flex flex-column">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="e-mail" id="e-mail" placeholder="Seu e-mail">
+                    <div class="contact-field d-flex flex-column">
+                        <label class="rounded" for="email">E-mail</label>
+                        <input type="email" name="e-mail" id="email" placeholder="Seu e-mail">
                     </div>
 
-                    <div class="d-flex flex-column">
-                        <label for="email">mensagem</label>
-                        <textarea name="mensage" id="mensage" cols="30" rows="10"
+                    <div class="contact-field d-flex flex-column">
+                        <label class="rounded" for="mensage">mensagem</label>
+                        <textarea name="mensage" id="mensage" cols="30" rows="5"
                             placeholder="Sua mensagem aqui..."></textarea>
                     </div>
 
