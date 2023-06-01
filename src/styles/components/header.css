@@ -20,20 +20,20 @@
     letter-spacing: -1.5px;
 }
 
-.main-header nav>ul {
+.main-header nav > ul {
     display: flex;
     gap: 8px;
     
 }
 
-.main-header nav>ul:hover li {
+.main-header nav > ul:hover li {
     filter: blur(2px);
 
     transition-property: "transform";
     transition: .25s ease-out;
 }
 
-.main-header nav>ul li:hover {
+.main-header nav > ul li:hover {
     position: relative;
     filter: blur(0);
     transform: scale(1.2);
