@@ -1,3 +1,28 @@
 footer {
-    padding: var(--pad-md) var(--pad-default) ;
+    padding: var(--pad-md) var(--pad-default);
+    color: var(--text-default);
+}
+
+#social-container {}
+footer h3 {
+    text-align: center;
+}
+
+.social-list {
+    width: 100%;
+    /* border: 2px solid; */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+
+.social-list li {
+    max-width: 5rem;
+    width: 100%;
+}
+
+.nav-bar {
+    color: var(--color-default) 
 }
