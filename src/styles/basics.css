@@ -1,5 +1,6 @@
 label {
     text-transform: capitalize;
+    font-size: calc(var(--pixel) * 4);
 }
 p {
     line-height: 1.5;
@@ -7,7 +8,10 @@ p {
 
 input,
 textarea {
+    background-color: rgba(var(--color-default-rgb), 0.3);
+    color: var(--text-default);
     padding: var(--pad-md) var(--pad-default);
+    
     border: none;
     outline: none;
 

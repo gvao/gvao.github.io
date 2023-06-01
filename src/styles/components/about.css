@@ -14,7 +14,7 @@
 .about-img {
     width: 70%;
     height: fit-content;
-    
+
     margin: 2.8rem;
 
     border: 0.7rem solid var(--color-default);
@@ -30,4 +30,17 @@
 
     transform: scale(.85);
     line-height: 1.5;
+}
+
+
+.about-social {
+    flex-shrink: 1;
+
+    padding: calc(var(--pixel) * 4);
+    border: 2px solid;
+    margin: calc(var(--pixel) * 3) 0;
+}
+
+.about-social img {
+    max-width: 5rem;
 }
