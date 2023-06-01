@@ -2,6 +2,7 @@
     /* # Serenity */
 
     /* Light */
+
     --color-black: #3f3f3f;
     --color-white: #fff;
     
@@ -10,6 +11,10 @@
     --color-default: rgb(0, 123, 255);
     
     --color-default-rgb: 0, 123, 255;
+
+    --bg-default: var(--color-white);
+        --text-default: var(--color-black);   
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,35 +27,10 @@
         --color-secondary: #2B2B2B;
         --color-default: #007BFF;
         --color-default-rgb: 0, 123, 255;
+
+        --text-default: var(--color-white);
+        --bg-default: var(--color-black);
     }
-}
-
-
-.outras-paletas {
-    /* # Ethereal */
-
-    /* Light */
-    --color-primary: #FFFFFF;
-    --color-secondary: #EAEAEA;
-    --color-default: #4CAF50;
-
-    /* Dark */
-    --color-primary: #111111;
-    --color-secondary: #303030;
-    --color-default: #4CAF50;
-
-
-    /* # Tranquil */
-
-    /* Light */
-    --color-primary: #F9F9F9;
-    --color-secondary: #D8D8D8;
-    --color-default: #FF9800;
-
-    /* Dark */
-    --color-primary: #1C1C1C;
-    --color-secondary: #363636;
-    --color-default: #FF9800;
 }
 
 :root {

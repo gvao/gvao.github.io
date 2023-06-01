@@ -40,7 +40,7 @@
                 <div class="banner-info rounded d-flex flex-column gap-5">
                     <div>
                         <p class="banner-title">Olá, meu nome é </p>
-                        <h3>Yuri Galvão</h3>
+                        <h3 class="title-default">Yuri Galvão</h3>
                     </div>
                     <p>
                         Sou um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes. Com mais de um
@@ -50,8 +50,6 @@
                 </div>
 
                 <div class="banner-img ">
-                    <!-- <img src="src/images/undraw_6.svg" alt="initial image"> -->
-                    <!-- <img src="src/images/undraw_firmware_re_fgdy.svg" alt="initial image"> -->
                     <img src="src/images/undraw_programming_re_kg9v.svg" alt="initial image">
                 </div>
 
@@ -63,12 +61,47 @@
 
             <div class="container d-flex justify-center items-center flex-column">
 
-                <h2 class="about-title">Sobre mim</h2>
+                <h2 class="title-default">Sobre mim</h2>
 
                 <div class="about-infos d-flex items-center justify-between">
 
-                    <div class="about-img">
-                        <img src="/src/images/perfil.jpeg" alt="foto perfil">
+                    <div>
+                        <div class="about-img">
+                            <img src="/src/images/perfil.jpeg" alt="foto perfil">
+                        </div>
+
+                        <div class="about-social rounded">
+                            <ul class="d-flex justify-evenly gap-2">
+
+                                <li class="social-item">
+                                    <a class="d-flex flex-column gap-1 items-center" target="_blank"
+                                        href="https://wa.me/5585992915328">
+                                        <img src="src/images/icons/social/whatsapp.png" alt="gvao-whatsapp">
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="d-flex flex-column items-center" target="_blank"
+                                        href="https://github.com/gvao">
+                                        <img src="src/images/icons/social/github.png" alt="gvao-github">
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="d-flex flex-column items-center" target="_blank"
+                                        href="https://www.linkedin.com/in/yuri-galvao">
+                                        <img src="src/images/icons/social/linkedin.png" alt="gvao-linkedin">
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a class="d-flex flex-column items-center" target="_blank"
+                                        href="https://www.linkedin.com/in/yuri-galvao">
+                                        <img src="src/images/icons/social/instagram.png" alt="gvao-instagram">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
                     </div>
 
                     <div class="about-description d-flex flex-column gap-4">
@@ -99,7 +132,7 @@
 
         <section id="skills" class="d-flex items-center justify-center">
             <div class="container d-flex flex-column gap-10 justify-center items-center">
-                <h2>Habilidades</h2>
+                <h2 class="title-default">Habilidades</h2>
 
                 <div class="skills-groups d-flex flex-column gap-7">
 
@@ -207,7 +240,7 @@
 
         <section id="projects" class="theme-secondary d-flex justify-center items-center">
             <div class="container d-flex justify-center items-center flex-column gap-5">
-                <h2>Projetos</h2>
+                <h2 class="title-default">Projetos</h2>
 
                 <div class="projects-container">
                     <ul class="projects-list d-flex gap-10 justify-start">
@@ -269,7 +302,7 @@
                                 github
                             </a>
                         </li>
-                        
+
                         <li class="project rounded">
                             <div class="project-img rounded">
                                 <img src="#" alt="">
@@ -300,29 +333,35 @@
         </section>
 
         <section id="contact">
-            <div class="container d-flex justify-center items-center flex-column gap-4">
-                <header>
-                    <h2>Contato</h2>
-                    <p>Estou disponível para oportunidades de trabalho e projetos interessantes. Se você gostaria de
-                        entrar em contato comigo, por favor, preencha o formulário abaixo ou envie um e-mail para
-                        yuri.gvao@gmail.com. Responderei o mais rápido possível.</p>
+            <h2 class="title-default">Contato</h2>
+            <div class="container d-flex justify-center items-center gap-4">
+
+                <header class="contact-infos">
+                    <p>
+                        Se você gostaria de entrar em contato comigo para discutir um projeto ou oportunidade de
+                        trabalho,
+                        preencha o formulário abaixo ou envie um e-mail para
+                        <span id="my-email">yuri.gvao@gmail.com</span>.
+                    </p>
+
                 </header>
 
-                <form class="d-flex flex-column gap-2">
 
-                    <div class="d-flex flex-column">
-                        <label for="name">name</label>
+                <form id="contact-form" class="d-flex wrap gap-2">
+
+                    <div class="contact-field d-flex flex-column">
+                        <label class="rounded" for="name">name</label>
                         <input type="text" name="name" id="name" placeholder="Seu nome...">
                     </div>
 
-                    <div class="d-flex flex-column">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="e-mail" id="e-mail" placeholder="Seu e-mail">
+                    <div class="contact-field d-flex flex-column">
+                        <label class="rounded" for="email">E-mail</label>
+                        <input type="email" name="e-mail" id="email" placeholder="Seu e-mail">
                     </div>
 
-                    <div class="d-flex flex-column">
-                        <label for="email">mensagem</label>
-                        <textarea name="mensage" id="mensage" cols="30" rows="10"
+                    <div class="contact-field d-flex flex-column">
+                        <label class="rounded" for="mensage">mensagem</label>
+                        <textarea name="mensage" id="mensage" cols="30" rows="5"
                             placeholder="Sua mensagem aqui..."></textarea>
                     </div>
 
@@ -333,55 +372,58 @@
 
     </main>
 
-    <footer class="theme-secondary">
+    <footer id="footer" class="theme-secondary">
 
         <div class="container d-flex flex-column gap-6 items-center">
 
-            <h2>Portifólio | Yuri Galvão</h2>
+            <h2 class="title-default">Portifólio | Yuri Galvão</h2>
 
-            <div class="d-flex justify-evenly w-full">
-                <nav class="">
-                    <ul class="nav-bar">
-                        <h3>Mapa</h3>
-                        <li class="item"><a href="/">home</a></li>
-                        <li class="item"><a href="#about">sobre</a></li>
-                        <li class="item"><a href="#skills">habilidades</a></li>
-                        <li class="item"><a href="#projects">projetos</a></li>
-                        <li class="item"><a href="#contact">contato</a></li>
-                    </ul>
-                </nav>
+            <div id="social-container">
+                <h3>Redes sociais</h3>
 
                 <ul class="social-list">
-
-                    <h3>Redes sociais</h3>
-
                     <li>
-                        <a href="https://wa.me/5585992915328">
-                            WhatsApp
+                        <a target="_blank" href="https://wa.me/5585992915328">
+                            <img src="src/images/icons/social/dark-whatsapp.svg" alt="dark-whatsapp">
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/gvao">
-                            GitHub
+                        <a target="_blank" href="https://github.com/gvao">
+                            <img src="src/images/icons/social/dark-github.svg" alt="dark-github">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/yuri-galvao">
-                            LinkedIn
+                        <a target="_blank" href="https://www.linkedin.com/in/yuri-galvao">
+                            <img src="src/images/icons/social/dark-linkedin.svg" alt="dark-linkedin">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/yuri-galvao">
-                            Instagram
+                        <a target="_blank" href="https://www.linkedin.com/in/yuri-galvao">
+                            <img src="src/images/icons/social/dark-instagram.svg" alt="dark-instagram">
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <p class="text-center text-center">
-                © 2023 Yuri Galvão. Todos os direitos reservados.
-            </p>
+            <nav id="footer-navegation" class="">
+                
+                <h3>Mapa</h3>
+
+                <ul class="nav-bar d-flex gap-2">
+                    <li class="item"><a href="/">home</a></li>
+                    <li class="item"><a href="#about">sobre</a></li>
+                    <li class="item"><a href="#skills">habilidades</a></li>
+                    <li class="item"><a href="#projects">projetos</a></li>
+                    <li class="item"><a href="#contact">contato</a></li>
+                </ul>
+            </nav>
+
+            
         </div>
+
+        <p class="text-center text-center">
+            © 2023 Yuri Galvão. Todos os direitos reservados.
+        </p>
 
     </footer>
 
