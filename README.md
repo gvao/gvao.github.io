@@ -23,11 +23,11 @@ Olá! Eu sou Yuri Moreira Galvão Prado, um desenvolvedor de software com foco e
 
 ### Relógio Digital
 
-> Descrição: Um relógio digital desenvolvido em React, exibindo a hora atual em tempo real. [Ver projeto](https://github.com/gvao/relogio-virtual)
+> Descrição: Um relógio digital desenvolvido com html, css e javascript, exibindo a hora atual em tempo real. [Ver projeto](https://github.com/gvao/relogio-virtual)
 
 ### Quiz Espacial
 
-> Descrição: Um quiz interativo de perguntas sobre o espaço, criado com React e Next.js. [Ver projeto](https://github.com/gvao/quiz-planetario)
+> Descrição: Um quiz interativo de perguntas sobre o espaço, criado com javascript vanilla. [Ver projeto](https://github.com/gvao/quiz-planetario)
 
 ## Objetivo
 
