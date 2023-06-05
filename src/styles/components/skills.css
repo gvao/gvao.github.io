@@ -1,18 +1,24 @@
 #skills {
     min-height: 60vh;
+    padding: 5rem 0;
 }
 
 
 .skills-section {
     background-color: var(--color-primary);
+
     min-height: 20vh;
+    width: 90%;
     
     padding: var(--pad-default);
+    margin: 0 auto;
     
-    /* border: .1rem solid; */
+    border: .1rem solid var(--color-default);
     border-radius: var(--radius-default);
 
     box-shadow: 0 0 1rem;
+
+    gap: 1.6rem;
 }
 
 .skills-section:nth-child(even) {
@@ -24,13 +30,14 @@
 }
 
 .skills-list {
-    max-width: 40%;
+    /* max-width: 40%; */
+    justify-content: space-evenly;
 }
 
 .skills-list li {
     position: relative;
     
-    flex-basis: 200rem;
+    flex: 1 1 40%;
     padding: var(--pad-md) var(--pad-default);
     
     font-size: 2.8rem;
@@ -38,23 +45,34 @@
     background-color: var(--color-primary);
     color: var(--color-white)
 }
+
 .skills-list li span {
-    position: absolute;
-    bottom: 0;
     background-color: rgba(var(--color-default-rgb), .8);
     color: var(--color-primary);
-    border-radius: var(--radius-default);
-
-    padding: var(--pad-md) var(--pad-default);
-
-    font-weight: bold;
+    
+    padding: var(--pad-sm) var(--pad-md);
     margin: 0 auto;
+    
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    position: absolute;
+    bottom: 0;
+
+    border-radius: var(--radius-default);
 
     box-shadow: 0 0 .8rem var(--color-black);
 }
 
 .skill-img {
     filter: drop-shadow(0px 0px 3px var(--color-default));
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .skills-section {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

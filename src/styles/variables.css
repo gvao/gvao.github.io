@@ -49,6 +49,7 @@
     /* padding */
     --pad-default: 1.6rem;
     --pad-md: calc(var(--pad-default) / 2);
+    --pad-sm: calc(var(--pad-md) / 2);
 
     /* radius */
     --radius-default: calc( var(--pixel) * 2 );
