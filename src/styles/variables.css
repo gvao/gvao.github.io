@@ -11,37 +11,36 @@
 
 /* colors */
 :root {
-    /* Light */
+    /* Dark */
+    --color-black: #000;
+    --color-white: #a2a2a2;
 
-    --color-black: #3f3f3f;
-    --color-white: #fff;
-    
-    --color-primary: #F5F5F5;
-    --color-secondary: #C4C4C4;
-    --color-default: rgb(0, 123, 255);
-    
+    --color-primary: #121212;
+    --color-secondary: #2B2B2B;
+    --color-default: #007BFF;
     --color-default-rgb: 0, 123, 255;
 
-    --bg-default: var(--color-white);
-        --text-default: var(--color-black);   
-
+    --text-default: var(--color-white);
+    --bg-default: var(--color-black);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: light) {
     :root {
-        /* Dark */
-        --color-black: #000;
-        --color-white: #a2a2a2;
-
-        --color-primary: #121212;
-        --color-secondary: #2B2B2B;
-        --color-default: #007BFF;
+    
+        --color-black: #3f3f3f;
+        --color-white: #fff;
+        
+        --color-primary: #F5F5F5;
+        --color-secondary: #C4C4C4;
+        --color-default: rgb(0, 123, 255);
+        
         --color-default-rgb: 0, 123, 255;
-
-        --text-default: var(--color-white);
-        --bg-default: var(--color-black);
+    
+        --bg-default: var(--color-white);
+            --text-default: var(--color-black);   
+    
     }
-}
+} */
 
 :root {
     --pixel: .4rem ;
@@ -53,6 +52,7 @@
 
     /* radius */
     --radius-default: calc( var(--pixel) * 2 );
+    --radius-md: calc( var(--pixel) * 1 );
 
     /* box-shadow */
     --shadow-default: .2rem .2rem .4rem rgba(0, 0, 0, .4);
