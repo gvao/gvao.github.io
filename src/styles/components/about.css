@@ -37,7 +37,7 @@
     flex-shrink: 1;
 
     padding: calc(var(--pixel) * 4);
-    border: 2px solid;
+    border: .2rem solid;
     margin: calc(var(--pixel) * 3) 0;
 }
 

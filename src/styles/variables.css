@@ -1,6 +1,16 @@
+/* Sizes */
 :root {
-    /* # Serenity */
 
+    --size-sm: 640px;
+    --size-md: 768px;
+    --size-lg: 1024px;
+    --size-xl: 1280px;
+    --size-xxl: 1536px;
+    --size-xxxl: 1920px;
+}
+
+/* colors */
+:root {
     /* Light */
 
     --color-black: #3f3f3f;

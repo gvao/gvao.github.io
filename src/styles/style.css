@@ -18,10 +18,50 @@ html {
 }
 
 body {
-    font-size: 2.4rem;
     font-family: Arial, Helvetica, sans-serif;
-
     background-color: var(--color-secondary);
     color: var(--color-default);
+    font-size: 1.6rem;
 }
 
+/* Responsividade - Tamanho SM (small) */
+@media (min-width: 640px) {
+    body {
+        font-size: 1.4rem; /* 14px */
+    }
+}
+
+/* Responsividade - Tamanho MD (medium) */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.6rem; /* 16px */
+    }
+}
+
+/* Responsividade - Tamanho LG (large) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.8rem; /* 18px */
+    }
+}
+
+/* Responsividade - Tamanho XL (extra-large) */
+@media (min-width: 1280px) {
+    body {
+        font-size: 2rem; /* 20px */
+    }
+}
+
+/* Responsividade - Tamanho 2XL */
+@media (min-width: 1536px) {
+    body {
+        font-size: 2.2rem; /* 22px */
+    }
+}
+
+/* Responsividade - Tamanho 3XL */
+@media (min-width: 1920px) {
+    body {
+        font-size: 2.4rem; /* 24px */
+    }
+}

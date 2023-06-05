@@ -30,7 +30,7 @@
 .skills-list li {
     position: relative;
     
-    flex-basis: 200px;
+    flex-basis: 200rem;
     padding: var(--pad-md) var(--pad-default);
     
     font-size: 2.8rem;

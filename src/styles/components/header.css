@@ -7,7 +7,7 @@
     top: 0;
 
     z-index: 1;
-    box-shadow: 1rem 0 4rem -18px;
+    box-shadow: 1rem 0 4rem -1.8rem;
 }
 
 .main-header .container {
@@ -17,7 +17,7 @@
 
 .main-header #logo {
     font-weight: bold;
-    letter-spacing: -1.5px;
+    letter-spacing: -.15rem;
 }
 
 .main-header nav > ul {
@@ -27,7 +27,7 @@
 }
 
 .main-header nav > ul:hover li {
-    filter: blur(2px);
+    filter: blur(.2rem);
 
     transition-property: "transform";
     transition: .25s ease-out;

@@ -1,12 +1,5 @@
 @import url('./display/flex.css');
 
-.container {
-    width: 100%;
-    max-width: 120.0rem;
-
-    margin: 3.2rem auto;
-    padding: 3.2rem 1.6rem;
-}
 
 .text-center {
     text-align: center;
@@ -23,7 +16,56 @@
 .title-default {
     text-align: center;
     margin: calc(var(--pixel) * 4) 0;
-    font-size: xxx-large;
+    max-width: 4 center;
     color: var(--text-default);
-    text-shadow: 0.3rem 0.3rem 0.5rem rgba( var(--color-default-rgb), 0.4);
+    text-shadow: 0.3rem 0.3rem 0.5rem rgba(var(--color-default-rgb), 0.4);
+}
+
+.container {
+    width: 100%;
+    /* max-width: 120.0rem; */
+
+    /* margin: 3.2rem auto;
+    padding: 3.2rem 1.6rem; */
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px; /* 14px */
+    }
+}
+
+/* Responsividade - Tamanho MD (medium) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px; /* 16px */
+    }
+}
+
+/* Responsividade - Tamanho LG (large) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px; /* 18px */
+    }
+}
+
+/* Responsividade - Tamanho XL (extra-large) */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px /* 20px */
+    }
+}
+
+/* Responsividade - Tamanho 2XL */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px; /* 22px */
+    }
+}
+
+/* Responsividade - Tamanho 3XL */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1920px; /* 24px */
+    }
 }
