@@ -1,11 +1,14 @@
 #contact {
-    padding: var(--pad-default) 0;
-
+    padding: 5rem 0;
+    
     min-height: 40vh;
+}
+#contact .container {
+    margin: 0 auto;
 }
 
 .contact-infos {
-    max-width: 50%;
+    max-width: 33%;
     flex: 1 0 50%;
     padding: var(--pad-default);
     color: var(--text-default);
@@ -24,9 +27,6 @@
     padding: var(--pad-md);
 }
 
-.contact-field {
-    flex-grow: 1;
-}
 
 #contact-form label {
     width: fit-content;
@@ -43,7 +43,25 @@
     /* margin-bottom: calc(var(--pixel) * -1.5) ; */
 }
 
+.contact-field.textarea {
+    flex-basis: 100%;
+}
+
+.contact-field {
+    flex-grow: 1;
+}
+
 #contact-form button {
     flex-grow: 1;
     flex-basis: 50%;
+}
+
+@media (max-width: 768px) {
+    #contact .container {
+        flex-direction: column;
+    }
+
+    .contact-infos {
+        max-width: 100%;
+    }
 }
