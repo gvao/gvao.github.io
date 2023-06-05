@@ -1,6 +1,11 @@
 footer {
-    padding: var(--pad-md) var(--pad-default);
+    padding: 5rem 0;
     color: var(--text-default);
+}
+
+footer .container {
+    margin-bottom: 3.2rem;
+    line-height: 1.5;
 }
 
 #social-container {}
@@ -10,7 +15,6 @@ footer h3 {
 
 .social-list {
     width: 100%;
-    /* border: 2px solid; */
 
     display: flex;
     flex-wrap: wrap;
