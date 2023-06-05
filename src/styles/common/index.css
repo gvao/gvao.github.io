@@ -19,6 +19,7 @@
     max-width: 4 center;
     color: var(--text-default);
     text-shadow: 0.3rem 0.3rem 0.5rem rgba(var(--color-default-rgb), 0.4);
+    font-size: 3.8rem;
 }
 
 .container {
