@@ -25,7 +25,7 @@ button, .button {
     color: var(--color-black);
 
     margin: 1.8rem 0 ;
-    padding: calc((var(--pad-md) var(--pad-default)) * 2);
+    padding: calc((var(--pad-md)) * 2) var(--pad-default);
 
     font-weight: bold;
     font-size: 2.0rem;

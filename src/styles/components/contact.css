@@ -11,17 +11,6 @@
     color: var(--text-default);
 }
 
-
-.social-item {
-    width: 100%;
-    height: 5.0rem;
-    flex: 1 1 1.00rem;
-}
-
-.social-item a {
-    width: 100%;
-}
-
 .social-name {
     width: 100%;
     transform: translateY(-20%);
