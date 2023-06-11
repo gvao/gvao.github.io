@@ -25,10 +25,17 @@
 }
 
 .project {
-    width: 40%;
-    min-width: 40vw;
-
+    max-height: 65vh;
+    flex: 1 0 50vw;
+    min-width: 25rem;
+    
     padding: 1.6rem;
+    
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -37,8 +44,15 @@
         0.3rem 0.3rem 0.8rem 0.2rem rgba(var(--color-default-rgb), 0.6);
 }
 
+.project:hover .project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .project-infos {
     margin: calc(var(--pixel) * 3) 0;
+    flex: 1 0 auto;
 }
 
 .project-subtitle {
@@ -55,16 +69,28 @@
 }
 
 .project-img {
-    height: 26rem;
-
+    height: 20rem;
     border: 2px solid;
 
     overflow: hidden;
+
+}
+
+.project-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .project-actions {
-    width: 100%;
+    width: 80%;
+    display: none;
 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
 }
 
 .project-actions .button {
