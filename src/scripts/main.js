@@ -1,10 +1,15 @@
 const projectList = document.querySelector('.projects-list')
+
+const whiteListRepositores = [ 523857175, 477349630, 639519294, 652333100, 622663732, 626637254, 624077765, 631251760 ]
+
 const projectImageApresentation = (projectName) => `https://raw.githubusercontent.com/gvao/${projectName}/main/project-apresentation.png`
 
-const insertProject = ({ name, description, html_url, homepage, ...props }) => {
-    console.log('insertProject');
-    projectList.innerHTML += `
-    <li class="project rounded">
+const insertProject = ({ id, name, description, html_url, homepage, ...props }) => {
+
+    const liComponent = document.createElement('li')
+    liComponent.setAttribute('class', 'project rounded')
+
+    liComponent.innerHTML += `
         <div class="project-img rounded">
             <img src="${projectImageApresentation(name)}" alt="">
         </div>
@@ -15,7 +20,9 @@ const insertProject = ({ name, description, html_url, homepage, ...props }) => {
             <p class="project-description">
                 ${description}
             </p>
-            
+
+
+
         </div>
 
         <div class="project-actions d-flex items-center justify-between gap-1">
@@ -28,15 +35,9 @@ const insertProject = ({ name, description, html_url, homepage, ...props }) => {
                 </a>
 
         </div>
-
-    </li>
     `
-}
 
-const hasImageProjectApresentation = async ({ name }) => {
-    console.log('hasImageProjectApresentation');
-    const imageRequest = await fetch(projectImageApresentation(name))
-    return imageRequest.ok;
+    projectList.insertAdjacentElement("beforeend", liComponent)
 }
 
 async function updateProjects() {
@@ -45,10 +46,8 @@ async function updateProjects() {
     console.log(repositores);
     projectList.innerHTML = ''
 
-    const blackListRepositores = ['gvao', "gestao-de-tempo", "timer"]
-
     repositores
-        .filter(repositore => !blackListRepositores.includes(repositore.name) && hasImageProjectApresentation(repositore))
+        .filter(repositore => whiteListRepositores.includes(repositore.id))
         .forEach(insertProject)
 
 }
