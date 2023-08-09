@@ -44,7 +44,6 @@ async function updateProjects() {
     const repositores = await getGithubRepositores()
 
     console.log(repositores);
-    projectList.innerHTML = ''
 
     repositores
         .filter(repositore => whiteListRepositores.includes(repositore.id))

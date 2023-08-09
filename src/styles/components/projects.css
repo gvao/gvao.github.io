@@ -74,7 +74,23 @@
 
     overflow: hidden;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+
+.project-img .warning {
+    min-width: 200%;
+    background-color: yellow;
+    color: var(--color-secondary);
+    text-align: center;
+    transform: rotate(330deg);
+    font-size: x-large;
+    font-weight: bolder;
+    padding: var(--pad-default);
+}
+
 
 .project-img img {
     height: 100%;
