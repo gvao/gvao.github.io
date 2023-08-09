@@ -85,7 +85,7 @@
     background-color: yellow;
     color: var(--color-secondary);
     text-align: center;
-    transform: rotate(330deg);
+    transform: rotate(345deg);
     font-size: x-large;
     font-weight: bolder;
     padding: var(--pad-default);
