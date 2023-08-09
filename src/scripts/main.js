@@ -37,7 +37,7 @@ const insertProject = ({ id, name, description, html_url, homepage, ...props }) 
         </div>
     `
 
-    projectList.insertAdjacentElement("beforeend", liComponent)
+    projectList.insertAdjacentElement("afterbegin", liComponent)
 }
 
 async function updateProjects() {
