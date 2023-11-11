@@ -1,96 +1,60 @@
-.main-header {
-    background-color: inherit;
-
+.header {
     width: 100%;
-
     position: fixed;
-    top: 0;
-
+    background: var(--color-secondary);
     z-index: 1;
-    box-shadow: 1rem 0 4rem -1.8rem;
 }
 
-.main-header .container {
-    margin: 0 auto;
-    padding: 1.6rem;
-}
-
-.main-header #logo {
-    font-weight: bold;
-    letter-spacing: -.15rem;
-}
-
-.nav-bar {
+.header__container {
     display: flex;
-    gap: 8px;   
+    justify-content: space-between;
+    padding: 16px;
 }
 
-@media ( max-width: 767px ) {
-    nav {
-        /* background-color: red; */
-        font-size: x-large;
-    }
+/* ----------------- nav ----------------- */
 
-
-    .nav-bar {
-        min-width: 50%;
-        height: 100%;
-
-        padding: var(--pad-default);
-        margin-top: 3.2rem;
-
-        background-color: var(--color-secondary);
-
-        position: fixed;
-        top: 0;
-        right: 0;
-        
-        flex-direction: column;
-        align-items: center;
-        gap: calc(1.6rem * 3);
-
-        transform: translateX(0%);
-    }
-
-    nav::before {
-        content: "";
-        background-color: rgba(0, 0, 0, 0.3);
-        width: 100vw;
-        height: 100vh;
-
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        z-index: -1;
-    }
-}
-
-.main-header nav > ul:hover li {
-    filter: blur(.2rem);
-
-    transition-property: "transform";
-    transition: .25s ease-out;
-}
-
-.main-header nav > ul li:hover {
+.nav {
     position: relative;
-    filter: blur(0);
-    transform: scale(1.2);
-    padding: var(--pad-md) var(--pad-default);
-    border-radius: var(--radius-default);
-}
-
-.nav-bar {
-    color: var(--color-default) 
-}
-
-.hamburguer {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.menu-nav {
+.nav__hamburger {
+    cursor: pointer;
+}
+
+.nav__list {
+    background-color: var(--color-primary);
+    padding: 16px;
+
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+    box-shadow: var(--shadow-default);
+    border-radius: var(--radius-md);
+
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+
+    transform: translateY(100%);
+}
+
+.nav__list.--show {
+    animation: showNav .8s forwards;
+    display: flex;
+}
+
+@keyframes showNav {
+    0% {
+        opacity: 0;
+    }
     
+    100% {
+        display: flex;
+        opacity: 1;
+    }
 }

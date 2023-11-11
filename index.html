@@ -15,29 +15,22 @@
 
 <body>
 
-    <header class="main-header">
-        <div class="container d-flex justify-between items-center">
-            <a id="logo" href="/">
-                Yuri Galvão
-            </a>
+    <header class="header">
+        <div class="header__container container">
+            <a class="header__logo" href="/" >Yuri Galvão</a>
 
-            <nav>
+            <nav class="nav" >
+                <span class="nav__hamburger material-symbols-outlined">
+                    menu
+                </span>
 
-                <div class="hamburguer">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </div>
-                
-                <div class="menu-nav">
-                    <ul class="nav-bar">
-                        <li class="item"><a href="/">home</a></li>
-                        <li class="item"><a href="#about">sobre</a></li>
-                        <li class="item"><a href="#skills">habilidades</a></li>
-                        <li class="item"><a href="#projects">projetos</a></li>
-                        <li class="item"><a href="#contact">contato</a></li>
-                    </ul>
-                </div>
+                <ul class="nav__list --show">
+                    <li class="item"><a href="/">home</a></li>
+                    <li class="item"><a href="#about">sobre</a></li>
+                    <li class="item"><a href="#skills">habilidades</a></li>
+                    <li class="item"><a href="#projects">projetos</a></li>
+                    <li class="item"><a href="#contact">contato</a></li>
+                </ul>
             </nav>
 
         </div>
@@ -383,6 +376,7 @@
 
     <script src="src/scripts/services.js"></script>
     <script src="src/scripts/main.js"></script>
+    <script src="src/scripts/menu.js"></script>
 
 </body>
 
