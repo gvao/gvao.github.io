@@ -29,10 +29,30 @@
     flex: 1 2 50vw;
 }
 
-.banner-img {
+.banner__img {
     width: 100%;
     padding: 5%;
     flex: 1 2 50vw; 
+}
+
+.banner__img.--float {
+    /* border: 2px solid; */
+    animation: float 8s infinite ease-in-out;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    25%, 75% {
+        transform: translateY(5%);
+    }
+    
+    50% {
+        transform: translateY(0%);
+    }
 }
 
 .banner-subtitle {
@@ -49,7 +69,8 @@
         flex-direction: column-reverse;
     }
 
-    .banner-img {
+    .banner__img {
         padding: 10%;
+
     }
 }
