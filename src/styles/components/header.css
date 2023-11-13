@@ -8,8 +8,10 @@
 .header__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px;
 }
+
 
 /* ----------------- nav ----------------- */
 
@@ -47,6 +49,34 @@
     animation: showNav .8s forwards;
     display: flex;
 }
+
+/* --------------------------- medias queries --------------------------- */
+
+@media  ( min-width: 768px ) {
+
+    /* .header {
+        background: red;
+    } */
+
+    .nav .nav__hamburger {
+        display: none;
+        position: relative;
+    }
+
+    .nav .nav__list {
+        display: flex;
+        position: static;
+        transform: translate(0);
+        flex-direction: row;
+
+        background-color: inherit;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+
+/* ---------------------- animations ---------------------- */
 
 @keyframes showNav {
     0% {
