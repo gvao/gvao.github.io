@@ -8,8 +8,9 @@ const showElementOnWindow =
 		if (!type === "scroll") return;
 
 		const { scrollY, innerHeight } = window;
-		const limit = scrollY + innerHeight * 0.5;
-		const percent = limit / offsetTop;
+		const limit = scrollY + innerHeight / 2;
+		const distance = offsetTop - limit;
+		const percent = 1 - distance / (innerHeight / 2)
 
 		Array.from(children).forEach((child) => {
 			child.style.opacity = 0;
