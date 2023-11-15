@@ -3,33 +3,27 @@ const sections = document.querySelectorAll("section");
 const observer = CreateObserver();
 
 const showElementOnWindow =
-	(section) =>
-	({ type, scrollY }) => {
+	({ offsetTop, id, children }) =>
+	({ type }) => {
 		if (!type === "scroll") return;
 
-		const diff = section.offsetTop - scrollY;
-		const heightWindow20percent = window.innerHeight * 0.7;
-		const percent = (diff * 1) / heightWindow20percent;
-
-		const { children } = section;
+		const { scrollY, innerHeight } = window;
+		const limit = scrollY + innerHeight * 0.5;
+		const percent = limit / offsetTop;
 
 		Array.from(children).forEach((child) => {
 			child.style.opacity = 0;
 
-			if (diff < 0) {
+			if (percent > 1) {
 				child.style.opacity = 1;
 				child.style.scale = 1;
 				child.style.filter = "blur(0)";
 				return;
 			}
 
-			if (diff < heightWindow20percent) {
-				child.style.opacity = 1 - percent;
-				child.style.filter = `blur(${100 * percent}px)`;
-				if (percent < 0.5) {
-					child.style.scale = 1 - percent;
-				}
-			}
+			child.style.opacity = percent;
+			child.style.filter = `blur(${50 - 50 * percent}px)`;
+			child.style.scale = 0.5 + 0.5 * percent;
 		});
 	};
 
@@ -37,11 +31,9 @@ sections.forEach((section) => {
 	observer.addObserver(showElementOnWindow(section));
 });
 
-document.addEventListener("scroll", (event) => {
-	const { scrollY } = window;
-
-	observer.notifyAll({ type: event.type, scrollY });
-});
+document.addEventListener("scroll", (event) =>
+	observer.notifyAll({ type: event.type })
+);
 
 function CreateObserver() {
 	const observers = [];
