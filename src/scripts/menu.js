@@ -2,29 +2,45 @@ const btnHamburger = document.querySelector(".nav__hamburger");
 const navList = document.querySelector(".nav__list");
 
 const classNameToShow = "--show";
-const delay = 2000
+const classNameToHide = "--hide";
+const delay = 2000;
+
+const isShow = () => navList.classList.contains(classNameToShow);
 
 function debounce(fn, delay) {
 	let timer;
 
-	return () => {
-		clearTimeout(timer);
-		timer = setTimeout(fn, delay);
+	return {
+		break() {
+			if (!timer) return;
+			clearTimeout(timer);
+			timer = null;
+			// console.log(`timer break`);
+		},
+		continue() {
+			clearTimeout(timer);
+			timer = setTimeout(fn, delay);
+			// console.log(`timer continue`);
+		},
 	};
 }
 
-const isShow = () => navList.classList.contains(classNameToShow);
+const classNameToRemove = () => (isShow() ? classNameToShow : classNameToHide);
+const classNameToAdd = () => (!isShow() ? classNameToShow : classNameToHide);
 
-const hideComponent = () => isShow() && navList.classList.remove(classNameToShow);
+const toggle = () => {
+	const toRemove = classNameToRemove();
+	const toAdd = classNameToAdd();
 
-const debounceHideMenu = debounce(hideComponent, delay);
+	navList.classList.remove(toRemove);
+	navList.classList.add(toAdd);
 
-const showComponent = () => {
-	if (!isShow()) navList.classList.add(classNameToShow);
-	debounceHideMenu();
+	if (toAdd === classNameToHide) return debounceHideMenu.break();
+	debounceHideMenu.continue();
 };
 
-const toggle = () => !isShow() && showComponent();
+const debounceHideMenu = debounce(toggle, delay);
 
-navList.addEventListener("mousemove", showComponent);
+navList.addEventListener("mousemove", debounceHideMenu.break);
+navList.addEventListener("mouseleave", debounceHideMenu.continue);
 btnHamburger.addEventListener("click", toggle);
