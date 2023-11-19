@@ -43,4 +43,7 @@ const debounceHideMenu = debounce(toggle, delay);
 
 navList.addEventListener("mousemove", debounceHideMenu.break);
 navList.addEventListener("mouseleave", debounceHideMenu.continue);
+navList.addEventListener("click", (event) => {
+	if (event.pointerType === "touch") debounceHideMenu.continue()
+});
 btnHamburger.addEventListener("click", toggle);
