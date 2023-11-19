@@ -97,9 +97,9 @@
 
 .nav__list .item:hover::after {
     animation-name: hideBorderBottom;
-    animation-duration: 1s;
+    animation-duration: .8s;
     animation-fill-mode: reverse;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
 }
 
 /* --------------------------- medias queries --------------------------- */
