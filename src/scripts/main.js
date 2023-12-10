@@ -1,6 +1,6 @@
 const projectList = document.querySelector('.projects-list')
 
-const whiteListRepositores = [ 523857175, 477349630, 639519294, 652333100, 622663732, 626637254, 624077765, 631251760 ]
+const whiteListRepositores = [523857175, 477349630, 639519294, 652333100, 622663732, 626637254, 624077765, 631251760]
 
 const projectImageApresentation = (projectName) => `https://raw.githubusercontent.com/gvao/${projectName}/main/project-apresentation.png`
 
@@ -41,14 +41,13 @@ const insertProject = ({ id, name, description, html_url, homepage, ...props }) 
 }
 
 async function updateProjects() {
-    const repositores = await getGithubRepositores()
+    const repositories = await getGithubRepositories()
 
-    console.log(repositores);
+    console.log({ repositories });
 
-    repositores
+    repositories
         .filter(repositore => whiteListRepositores.includes(repositore.id))
         .forEach(insertProject)
-
 }
 
 updateProjects()

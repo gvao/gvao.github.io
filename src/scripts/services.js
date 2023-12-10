@@ -2,7 +2,7 @@ const url = "https://api.github.com/users/gvao/repos"
 
 let githubRepositoresCached = []
 
-const getGithubRepositores = () => fetch(url)
+const getGithubRepositories = () => fetch(url)
     .then(res => {
         if (!res.ok) {
             throw new Error("Couldn't get Github repositories from " + url)
