@@ -62,3 +62,5 @@ const filteredProjects = projects
 
 filteredProjects
     .forEach(insertProject)
+
+projectList.scrollLeft = 0
