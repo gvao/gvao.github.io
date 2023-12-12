@@ -5,7 +5,7 @@ const url = "https://api.github.com/users/gvao/repos"
 /**
  * @implements {Repository}
  */
-export default class GithubRepository {
+export class GithubRepository {
 
     products = null
 
@@ -14,7 +14,7 @@ export default class GithubRepository {
     }
 
     async getAll() {
-        if(!this.products ) {
+        if (!this.products) {
             this.products = await this.fetchProjects()
         }
         return this.products
@@ -35,3 +35,5 @@ export default class GithubRepository {
         }
     }
 }
+
+export default new GithubRepository()

@@ -53,12 +53,13 @@ const insertProject = ({ id, name, description, html_url, homepage, ...props }) 
     projectList.insertAdjacentElement("afterbegin", liComponent)
 }
 
-const repository = new GithubRepository()
-const getProjects = new GetProjectsUseCase(repository)
+const getProjects = new GetProjectsUseCase(GithubRepository)
 const projects = await getProjects.execute()
 
 const filteredProjects = projects
     .filter(repository => whiteListIds.includes(repository.id))
+
+console.log(filteredProjects);
 
 filteredProjects
     .forEach(insertProject)
