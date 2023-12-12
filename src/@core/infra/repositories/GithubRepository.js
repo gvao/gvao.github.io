@@ -1,3 +1,4 @@
+import Project from "../../domain/entities/project.js";
 import Repository from "../../domain/models/repositories/products.js";
 
 const url = "https://api.github.com/users/gvao/repos"
@@ -7,6 +8,7 @@ const url = "https://api.github.com/users/gvao/repos"
  */
 export class GithubRepository {
 
+    /** @type {Project[]} */
     products = null
 
     constructor() {
@@ -14,12 +16,16 @@ export class GithubRepository {
     }
 
     async getAll() {
+        let projectsData
         if (!this.products) {
-            this.products = await this.fetchProjects()
+            projectsData = await this.fetchProjects()
         }
+        this.products = projectsData.map(data => new Project(data))
+
         return this.products
     }
 
+    /** @returns {Promise<Array>} */
     async fetchProjects() {
         try {
             const res = await fetch(url);
