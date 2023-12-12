@@ -1,6 +1,21 @@
+import GetProjectsUseCase from "../@core/domain/use-cases/getProjects.js"
+import GithubRepository from "../@core/infra/repositories/GithubRepository.js"
+
 const projectList = document.querySelector('.projects-list')
 
-const whiteListRepositories = [652663384, 523857175, 477349630, 639519294, 652333100, 622663732, 626637254, 624077765, 631251760]
+const whiteList = [
+    { id: 652663384 },
+    { id: 523857175 },
+    { id: 477349630 },
+    { id: 639519294 },
+    { id: 652333100 },
+    { id: 622663732 },
+    { id: 626637254 },
+    { id: 624077765 },
+    { id: 631251760 },
+]
+
+const whiteListIds = whiteList.map(({ id }) => id)
 
 const ProjectImagePresentation = (projectName) => `https://raw.githubusercontent.com/gvao/${projectName}/main/project-apresentation.png`
 
@@ -21,8 +36,6 @@ const insertProject = ({ id, name, description, html_url, homepage, ...props }) 
                 ${description}
             </p>
 
-
-
         </div>
 
         <div class="project-actions d-flex items-center justify-between gap-1">
@@ -40,33 +53,12 @@ const insertProject = ({ id, name, description, html_url, homepage, ...props }) 
     projectList.insertAdjacentElement("afterbegin", liComponent)
 }
 
-class Project {
-    id
-    name
-    description
-    html_url
-    homepage
+const repository = new GithubRepository()
+const getProjects = new GetProjectsUseCase(repository)
+const projects = await getProjects.execute()
 
-    constructor({ id, name, description, html_url, homepage }) {
-        this.id = id
-        this.name = name
-        this.description = description
-        this.html_url = html_url
-        this.homepage = homepage
-    }
-}
+const filteredProjects = projects
+    .filter(repository => whiteListIds.includes(repository.id))
 
-async function updateProjects() {
-    const repositories = await getGithubRepositories()
-
-    const filteredRepositories = repositories
-        .filter(repository => whiteListRepositories.includes(repository.id))
-
-    const projects = filteredRepositories
-        .map(repo => new Project(repo))
-
-    projects
-        .forEach(insertProject)
-}
-
-updateProjects()
+filteredProjects
+    .forEach(insertProject)
